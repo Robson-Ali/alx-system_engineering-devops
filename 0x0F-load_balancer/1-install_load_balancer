@@ -10,11 +10,11 @@ apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend  webrobson-frontend
+frontend sitesolutions.tech-frontend
         bind *:80
         mode http
-        default_backend webrobson-backend
-backend webrobson-backend
+        default_backend sitesolutions.tech-backend
+backend sitesolutions.tech-backend
         balance roundrobin
         server 15425-web-01 100.25.201.127:80 check
         server 15425-web-02 54.237.226.99:80 check
