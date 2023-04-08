@@ -36,7 +36,7 @@ defaults
 
 frontend sitesolutions.tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend sitesolutions.tech-backend
 
 backend sitesolutions.tech-backend
     balance roundrobin
