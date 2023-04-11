@@ -33,18 +33,18 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend sitesolutions.tech-frontend
+frontend sitesolutions-frontend
 	bind *:80
 	mode http
 	http-request set-header X_Forwarded-Proto http
-	default_backend sitesolutions.tech-backend
+	default_backend sitesolutions-backend
 
-frontend sitesolution.tech-frontend-https
+frontend sitesolution-frontend-https
 	bind *:443 ssl crt /etc/haproxy/certs/www.sitesolutions.tech.tech.pem
 	http-request set-header X-Forwarded-Proto https
-	default_backend sitesolutions.tech-backend
+	default_backend sitesolutions-backend
 
-backend sitesolutions.tech-backend
+backend sitesolutions-backend
 	balance roundrobin
 	server 15425-web-01 100.25.201.127:80 check
 	server 15425-web-02 54.237.226.99:80 check
