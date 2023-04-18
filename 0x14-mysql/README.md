@@ -1,6 +1,6 @@
 This is my sql tasks.
 
-
+![0x14 my_sql](https://user-images.githubusercontent.com/99282807/232925324-75caf946-f6f0-429d-b631-03193957165e.png)
 
 Tasks
 
