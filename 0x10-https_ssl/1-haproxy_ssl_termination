@@ -39,7 +39,7 @@ frontend sitesolutions-frontend
 	http-request set-header X_Forwarded-Proto http
 	default_backend sitesolutions-backend
 
-frontend sitesolution-frontend-https
+frontend sitesolutions-frontend-https
 	bind *:443 ssl crt /etc/haproxy/certs/www.sitesolutions.tech.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	default_backend sitesolutions-backend
