@@ -48,3 +48,4 @@ backend sitesolutions.tech_backend
         balance roundrobin
         server 15425-web-01 100.25.201.127:80 check
         server 15425-web-02 54.237.226.99:80 check
+
