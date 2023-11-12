@@ -20,6 +20,7 @@ Time (GMT + 3)	Actions
 12:20AM	Successful rollback
 12:20AM	Server restart initiated
 12:22AM	100% of traffic back online
+
 Root cause
 
 
